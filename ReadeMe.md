@@ -2,7 +2,7 @@
 
 ## Naming convention
 
-- camel case --> myName
+- camel case --> showResultsToday
 
 ## DOM Manipulation
 
@@ -24,6 +24,9 @@ name="Mary"
 2. const
    -> constant
    const idNumber = 23456785
+
+   <!-- error... cannot redeclare constants -->
+   <!-- idNumber = 3454623  -->
 
 3. var
    --> legacy code (previous versions)
@@ -59,7 +62,7 @@ alert("Your name is " + name)
 
  <!-- a function must be called, uncontrolled func leads to breaking of your code -->
 
-displayName("Lens")
+displayName("Mary")
 
 # object
 
@@ -67,6 +70,7 @@ displayName("Lens")
 const user = {
 firstName: "John",
 lastName: "Doe",
-Gender:"female",
-calculateTime:new Date(),
+Gender:"female", //string
+calculateTime:new Date(), // func
+age:40, // nunber
 }

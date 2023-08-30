@@ -3,7 +3,9 @@ const showBtnEl = document.getElementById("show-btn");
 const inputEl = document.getElementById("name");
 const nameWrapperEl = document.getElementById("name-wrapper");
 
-let enteredName = "";
+let enteredName = ""; // string
+let someVariable; // undefined
+let anotherVariable = null; // null
 
 const handleInputChanges = (ev) => {
 	enteredName = ev.target.value;
@@ -43,3 +45,23 @@ inputEl.addEventListener("input", handleInputChanges);
 // input
 // ---onChange --> input's event and does something with it
 // --helper function --> event from onChange and then utilises it
+// Math.random();
+const user = {
+	first: "John",
+	last: "Doe",
+};
+console.log(user.first + " " + user.last);
+
+function stopCar() {
+	console.log("Stop Car");
+}
+
+const car = {
+	model: "Model",
+	yom: 2001,
+	color: "Blue",
+	startCar: () => {
+		console.log("Car has started!");
+	},
+	stopCar: stopCar,
+};

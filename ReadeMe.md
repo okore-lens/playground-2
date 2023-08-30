@@ -64,13 +64,40 @@ alert("Your name is " + name)
 
 displayName("Mary")
 
+# data types
+
+1. string :: ""
+2. number :: 6,8,43
+3. object :: {property:value(any data type),method:func} , arrays,functions
+4. null :: null
+5. undefined :: undefined
+6. boolean :: true, false --> falsy/truthy
+
+# key words
+
 # object
 
--- properties , how to access it and manipulate it
+-- properties , methods , how to access it and manipulate it
 const user = {
 firstName: "John",
 lastName: "Doe",
 Gender:"female", //string
-calculateTime:new Date(), // func
 age:40, // nunber
+calculateRandomNumber: Math.random(), // func
+subjectScores:{
+maths:60,
+english:90
 }
+}
+
+# arrays
+
+-- list of any data type
+const array1 = [1,2,3,4,5]; //numbers
+const array11 = ["a","b","d"] // strings
+const array12 = [1,"c",4,"d"] // numbers and strings
+const array13 = [{name:"Otiato",gender:"male"},{name:"Person",gender:"binary"}] // objects
+const array14 = [
+[1,2,3,4,5], ["a","b","c"]
+] // arrays
+const array2 = new Array() // legacy codes
